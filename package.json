@@ -1,0 +1,21 @@
+{
+  "name": "manifold-simple-demo",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npx serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iiif-commons/manifold-simple-demo.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iiif-commons/manifold-simple-demo/issues"
+  },
+  "homepage": "https://github.com/iiif-commons/manifold-simple-demo#readme",
+  "devDependencies": {
+
+  }
+}
