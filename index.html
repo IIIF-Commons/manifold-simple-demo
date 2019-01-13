@@ -1,9 +1,17 @@
 <html>
 <head>
-  <script src="https://unpkg.com/@iiif/manifold@2.0.0-pre.2/dist-umd/manifold.js"></script>
+  <script src="https://unpkg.com/manifesto.js@4.0.0-pre.5/dist-umd/manifesto.js"></script>
+  <script src="https://unpkg.com/@iiif/manifold@2.0.0-pre.4/dist-umd/manifold.js"></script>
   <script>
-	  manifold.loadManifest('http://wellcomelibrary.org/iiif/b18035723/manifest').then(function(helper){
-      console.log(helper);
+	  manifold.loadManifest({
+        manifestUri: 'http://wellcomelibrary.org/iiif/b18035723/manifest',
+        collectionIndex: 0,
+        manifestIndex: 0,
+        sequenceIndex: 0,
+        canvasIndex: 0,
+        locale: 'en-gb'
+      }).then(function(helper){
+        document.body.innerHTML = helper.manifest.getDefaultLabel();
     });
   </script>
 </head>
